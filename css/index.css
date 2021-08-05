@@ -1,0 +1,142 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    color: black; 
+}
+
+/*navigation bar starts*/
+
+nav {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    left: 17px;
+    top: 16px;
+}
+
+/*company name and logo on left side of nav bar*/
+
+#company-name {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+    width: 81px;
+    height: 23px;
+    left: 65px;
+    top: 11px;
+    line-height: 23px;
+}
+
+#logo {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    left: 17px;
+    top: 16px;
+}
+
+/*languages drop down menu*/
+
+#lang {
+    list-style-type: none;
+    background-color: transparent;
+    color: black;
+    position: absolute;
+    width: 19px;
+    height: 18px;
+    left: 334px;
+    top: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 131.19%;    /* or 18px */
+    color: #000000;
+}
+  
+#lang li {
+    float: left;
+    margin-left: 0;
+}
+  
+.lang-dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*menu*/
+#menu {
+    list-style-type: none;
+    background-color: transparent;
+    color: black;
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    left: 400px;     /*with icon maybe 37xpx*/
+    top: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 131.19%;    /* or 18px */
+    color: #000000;
+}
+
+#menu li {
+    float: left;
+    margin-left: 0;
+}
+
+.menu-dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu-icon {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 3px 15px;
+    text-decoration: none;
+}
+
+/* common for both drop down menus */
+
+.dropdown-content a:hover {
+    color: #00A5DD;
+}
+  
+li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*navigation bar ends*/
