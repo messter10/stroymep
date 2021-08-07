@@ -1,9 +1,52 @@
+:root {
+    --dark-blue: #0000AD;
+    --light-blue: #0093E9;
+    --lightest-blue: #00A5DD;
+    --light-grey: #5C5C5C;
+    --white: #FFFFFF;
+    --black: #000000; 
+}
+
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     font-style: normal;
     font-size: 16px;
     color: black; 
 }
+
+.button {
+    position: absolute;
+    background: #0000AD;
+    display: flex;
+    border: 1px solid #0000AD;
+    box-shadow: none;
+    border-radius: 24.5px;
+    z-index: 3;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-text {
+    position: absolute;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 131.19%;   /* or 29px */
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+.highlight-blue {
+    color: #0000AD;
+}
+
+.small-headings {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 131.19%;    /* or 34px */
+    color: #000000;
+ }
 
 /*navigation bar starts*/
 nav {
@@ -161,16 +204,6 @@ li.dropdown {
 }
 /*main heading ends*/
 
-.highlight-blue {
-    color: #0000AD;
-}
-
-.small-headings {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 131.19%;    /* or 34px */
-}
-
 /* see our projects related button and text starts */
 #project-button-area > h2 {
     position: absolute;
@@ -181,32 +214,17 @@ li.dropdown {
 }
 
 #project-button {
-    position: absolute;
     left: 40px;
     top: 630px;
     width: 217px;
     height: 49px;
-    background: #0000AD;
-    display: flex;
-    border: 1px solid #0000AD;
-    box-shadow: none;
-    border-radius: 24.5px;
-    z-index: 3;
-    margin: 0 auto;
 }
 
 #project-button-area > #project-button >  a {
-    position: absolute;
     width: 141px;
     height: 34px;
     left: 40px;
     top: 9px;
-    margin: auto;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 131.19%;   /* or 29px */
-    color: #FFFFFF;
-    text-decoration: none;
 }
 /* see our projects related button and text ends */
 
@@ -275,6 +293,7 @@ li.dropdown {
 }
 /* about us section ends */
 
+/* services section starts */
 #services-description {
     position: absolute;
     width: 285px;
@@ -300,7 +319,7 @@ li.dropdown {
     position: absolute;
     width: 15px;
     height: 15px;
-    left: 254px;
+    left: 304px;
     top: 1373px;
     border-radius: 50%;
 }
@@ -309,7 +328,7 @@ li.dropdown {
     position: absolute;
     width: 114px;
     height: 29px;
-    left: 283px;
+    left: 333px;
     top: 1360px;
     font-weight: bold;
     font-size: 22px;
@@ -318,33 +337,86 @@ li.dropdown {
 }
 
 #service-button {
-    position: absolute;
-    width: 158px;
+    width: 140px;
     height: 49px;
     left: 25px;
     top: 1390px;
-    background: #0000AD;
-    display: flex;
-    border: 1px solid #0000AD;
-    box-shadow: none;
-    border-radius: 24.5px;
-    z-index: 3;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
 }
 
 #services > #service-button > a {
-    position: absolute;
     width: 158px;
     height: 49px;
     left: 25px;
     top: 9px;
-    margin: 0 auto;
+}
+/* services section ends */
+
+/* ending section starts */
+#ending > h3 {
+    position: absolute;
+    width: 250px;
+    height: 93px;
+    left: 30px;
+    top: 1606px;
     font-weight: 700;
-    font-size: 22px;
-    line-height: 131.19%;   /* or 29px */
-    color: #FFFFFF;
-    text-decoration: none;
+    font-size: 24px;
+    line-height: 131.19%;   /* or 31px */
+    color: #000000;
 }
 
+#ending > p {
+    position: absolute;
+    width: 369px;
+    height: 104px;
+    left: 30px;
+    top: 1731px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 131.19%;    /* or 26px */
+    color: #5C5C5C;
+}
+/* ending section ends */
+
+/* contact section starts */
+#contact > h2 {
+    position: absolute;
+    width: 297px;
+    height: 68px;
+    left: 30px;
+    top: 1877px;
+}
+
+#contact-button {
+    width: 158px;
+    height: 49px;
+    left: 25px;
+    top: 1992px;
+}
+
+#contact > #contact-button > a {
+    width: 158px;
+    height: 49px;
+    left: 25px;
+    top: 9px;
+}
+/* contact section ends */
+
+/* footer starts */
+#logo-name {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    left: 26px;
+    top: 2105px;
+    padding-bottom: 10px;
+}
+
+#copyright {
+    position: absolute;
+    width: 129px;
+    height: 18px;
+    left: 71px;
+    top: 2114px;
+    padding-bottom: 10px;
+}
+/* footer ends */
