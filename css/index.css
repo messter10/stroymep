@@ -140,7 +140,7 @@ li.dropdown {
 /*navigation bar ends*/
 
 /*main heading starts*/
-#heading {
+#home > h1 {
     position: absolute;
     width: 409px;
     height: 220px;
@@ -152,7 +152,7 @@ li.dropdown {
     color: #000000;
 }
 
-#welcome-frame {
+#home > img {
     position: absolute;
     width: 384px;
     height: 425.48px;
@@ -172,7 +172,7 @@ li.dropdown {
 }
 
 /* see our projects related button and text starts */
-#heading-1 {
+#project-button-area > h2 {
     position: absolute;
     width: 183px;
     height: 69px;
@@ -195,7 +195,7 @@ li.dropdown {
     margin: 0 auto;
 }
 
-#project-button-text {
+#project-button-area > #project-button >  a {
     position: absolute;
     width: 141px;
     height: 34px;
@@ -223,11 +223,6 @@ li.dropdown {
     top: 720px;
 }
 
-#arrow-1, #arrow-2, #arrow-description {
-    text-decoration: none;
-    color: #000000;
-}
-
 #arrow-description {
     position: absolute;
     width: 226px;
@@ -238,8 +233,14 @@ li.dropdown {
     font-size: 22px;
     line-height: 131.19%;   /* identical to box height, or 29px */
 }
+
+#arrow-1, #arrow-2, #arrow-description {
+    text-decoration: none;
+    color: #000000;
+}
 /* arrow linked to about us section ends */
 
+/* about us section starts */
 #about-us h3 {
     position: absolute;
     width: 349px;
@@ -250,3 +251,100 @@ li.dropdown {
     font-size: 24px;
     line-height: 131.19%;    /* or 31px */
 }
+
+.about-us-txt {
+    position: absolute;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 131.19%;   /* or 26px */
+    color: #5C5C5C;
+}
+
+#about-us-txt1 {
+    width: 376px;
+    height: 137px;
+    left: 30px;
+    top: 952px;
+}
+
+#about-us-txt2 {
+    width: 358px;
+    height: 130px;
+    left: 28px;
+    top: 1125px;
+}
+/* about us section ends */
+
+#services-description {
+    position: absolute;
+    width: 285px;
+    height: 52px;
+    left: 28px;
+    top: 1302px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 131.19%;  /* or 26px */
+    color: #000000;
+}
+
+#services > img {
+    position: absolute;
+    width: 655px;
+    height: 384.2px;
+    left: -50px;
+    top: 1136px;
+}
+
+#circle {
+    background-color: #FF0000;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 254px;
+    top: 1373px;
+    border-radius: 50%;
+}
+
+#location {
+    position: absolute;
+    width: 114px;
+    height: 29px;
+    left: 283px;
+    top: 1360px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 131.19%;  /* identical to box height, or 29px */
+    color: #000000;
+}
+
+#service-button {
+    position: absolute;
+    width: 158px;
+    height: 49px;
+    left: 25px;
+    top: 1390px;
+    background: #0000AD;
+    display: flex;
+    border: 1px solid #0000AD;
+    box-shadow: none;
+    border-radius: 24.5px;
+    z-index: 3;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#services > #service-button > a {
+    position: absolute;
+    width: 158px;
+    height: 49px;
+    left: 25px;
+    top: 9px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 131.19%;   /* or 29px */
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
