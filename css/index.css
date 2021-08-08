@@ -51,7 +51,7 @@ body {
 /*navigation bar starts*/
 nav {
     position: absolute;
-    width: 37px;
+    width: 100vw;
     height: 37px;
     left: 17px;
     top: 16px;
@@ -65,17 +65,17 @@ nav {
     position: absolute;
     width: 81px;
     height: 23px;
-    left: 55px;
-    top: 10.5px;
+    left: 65px;
+    top: 18px;
     line-height: 23px;
 }
 
 #logo {
     position: absolute;
-    width: 37px;
-    height: 37px;
+    width: 50px;
+    height: 50px;
     left: 17px;
-    top: 16px;
+    top: 15px;
 }
 
 /*languages drop down menu*/
@@ -83,13 +83,13 @@ nav {
     list-style-type: none;
     background-color: transparent;
     color: black;
-    position: absolute;
+    position: relative;
     width: 19px;
     height: 18px;
     left: 334px;
-    top: 2.5px;
+    top: 1px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 131.19%;    /* or 18px */
     color: #000000;
 }
@@ -112,13 +112,13 @@ nav {
     list-style-type: none;
     background-color: transparent;
     color: black;
-    position: absolute;
+    position: relative;
     width: 16px;
     height: 15px;
-    left: 390px;     /*with icon maybe 37xpx*/
-    top: 3px;
+    left: 410px;     /*with icon maybe 37xpx*/
+    top: -50px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 131.19%;    /* or 18px */
     color: #000000;
 }
@@ -421,3 +421,17 @@ li.dropdown {
     padding-bottom: 10px;
 }
 /* footer ends */
+
+@media only screen and (max-width: 576px) {
+    body {
+        background-color: var(--lightest-blue);
+    }
+
+    #lang {
+        left: 85vw;
+    }
+
+    #menu {
+        left: 98vw;
+    }
+}
