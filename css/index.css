@@ -52,7 +52,7 @@ body {
 nav {
     position: absolute;
     width: 100vw;
-    height: 37px;
+    height: 50px;
     left: 17px;
     top: 16px;
 }
@@ -428,10 +428,10 @@ li.dropdown {
     }
 
     #lang {
-        left: 85vw;
+        left: 68vw;
     }
 
     #menu {
-        left: 98vw;
+        left: 81vw;
     }
 }
