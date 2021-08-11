@@ -35,7 +35,6 @@ body {
     font-size: 22px;
     line-height: 131.19%;   /* or 29px */
     color:#FFFFFF;
-    text-decoration: none;
 }
 
 .highlight-blue {
@@ -200,24 +199,17 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
 /*navigation bar ends*/
 
 /*main heading starts*/
-#home > h1 {
-    position: absolute;
-    width: 409px;
-    height: 220px;
-    left: 40px;
-    top: 180px;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 109.69%;   /* or 55px */
-    color: #000000;
+#home {
+    width: 100vw;
+    display: block;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-#home > img {
-    position: absolute;
-    width: 384px;
-    height: 425.48px;
-    left: 41px;
-    top: 125px;
+#home > #welcome-frame {
+    height: auto;
+    width: 95%;
 }
 /*main heading ends*/
 
@@ -237,7 +229,7 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     height: 49px;
 }
 
-#project-button-area > #project-button >  a {
+#project-button-area > #project-button >  p {
     width: 141px;
     height: 34px;
     left: 40px;
@@ -360,7 +352,7 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     top: 1390px;
 }
 
-#services > #service-button > a {
+#services > #service-button > p {
     width: 158px;
     height: 49px;
     left: 25px;
@@ -410,7 +402,7 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     top: 1992px;
 }
 
-#contact > #contact-button > a {
+#contact > #contact-button > p {
     width: 158px;
     height: 49px;
     left: 25px;
@@ -440,10 +432,11 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
 /* footer ends */
 
 
-/* big enough for two columns */
-@media only screen and (min-width: 776px) {
+/* pc version: big enough for two columns */
+@media only screen and (min-width: 766px) {
     #desktop-menu {
         display: block;
+        margin-right: 10px;
     }
 
     #menu {
@@ -453,6 +446,17 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     #lang {
         margin-right: 50px;
     }
+
+    /*main heading starts*/
+    /* home chnged so not showing correctly for desktop */
+    #home > #welcome-frame {
+        position: absolute;
+        width: 409px;
+        height: 425.48px;
+        left: 29px;
+        top: 95px;
+    }
+    /*main heading ends*/
 }
 
 /* the language and menu become column instead of row after this point*/
@@ -461,3 +465,5 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
         background-color: #000000;
     }
 }
+
+/* add media query to chnge text size */
