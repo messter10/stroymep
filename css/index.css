@@ -52,6 +52,7 @@ body {
 nav {
     width: 100%;
     height: 60px;
+    padding-right: 10px;
 }
 
 /*company name and logo on left side of nav bar*/
@@ -102,7 +103,7 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
 .dropdown-content {
     display: none;
     position: relative;
-    background-color: transparent;
+    background-color: white;
     min-width: 160px;
     z-index: 1;
 }
@@ -132,7 +133,7 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     color: #000000;
     font-weight: 700;
     font-size: 18px;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 #desktop-menu a:hover {
@@ -205,17 +206,29 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     text-align: left;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 35px;
 }
 
 #home > #welcome-frame {
     height: auto;
-    width: 95%;
+    width: 85%;
+    left: 29px;
+    top: 95px;
 }
 /*main heading ends*/
 
 /* see our projects related button and text starts */
+#project-button-area {
+    width: 100vw;
+    display: block;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -10px;
+}
+
 #project-button-area > h2 {
-    position: absolute;
+    /*position: absolute;*/
     width: 183px;
     height: 69px;
     left: 40px;
@@ -223,8 +236,9 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
 }
 
 #project-button {
-    left: 40px;
-    top: 630px;
+    position: relative;
+    left: -50px;
+    top: 20px;
     width: 217px;
     height: 49px;
 }
@@ -444,7 +458,11 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     }
 
     #lang {
-        margin-right: 50px;
+        margin-right: 40px;
+    }
+
+    nav {
+        padding-right: 0px;
     }
 
     /*main heading starts*/
@@ -457,6 +475,30 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
         top: 95px;
     }
     /*main heading ends*/
+
+    /* project button */
+    #project-button-area > h2 {
+        position: absolute;
+        width: 183px;
+        height: 69px;
+        left: 40px;
+        top: 520px;
+    }
+    
+    #project-button {
+        left: 40px;
+        top: 630px;
+        width: 217px;
+        height: 49px;
+    }
+    
+    #project-button-area > #project-button >  p {
+        width: 141px;
+        height: 34px;
+        left: 40px;
+        top: 9px;
+    } 
+    /* project button ends */
 }
 
 /* the language and menu become column instead of row after this point*/
@@ -466,4 +508,33 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     }
 }
 
-/* add media query to chnge text size */
+/* media query to chnge text size on mobile view */
+@media only screen and (max-width: 414px) and (min-width: 321px){
+    #logo {
+        width: 70px;
+        height: 70px;
+        margin-top: 0px;
+    }
+
+    #company-name {
+        font-size: 22px;
+        margin-top: 25.5px;
+    }
+
+    #lang {
+        font-size: 22px;
+        margin-right: 30px;
+        margin-top: 9px;
+    }
+
+    #menu {
+        font-size: 22px;
+        margin-top: 10.5px;
+    }
+}
+/* 320 is iphone 5se. 
+needs some other design or when 
+language is chnged to EN then we can do it.
+becomes two lines otherwise.*/
+
+
