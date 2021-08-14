@@ -41,10 +41,17 @@ body {
     color: #0000AD;
 }
 
-.small-headings {
+.h2-headings {
     font-weight: 700;
     font-size: 26px;
     line-height: 131.19%;    /* or 34px */
+    color: #000000;
+ }
+
+ .h3-headings {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 131.19%;    /* or 31px */
     color: #000000;
  }
 
@@ -238,7 +245,7 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
 #project-button {
     position: relative;
     left: -50px;
-    top: 20px;
+    top: 40px;
     width: 217px;
     height: 49px;
 }
@@ -251,78 +258,62 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
 }
 /* see our projects related button and text ends */
 
-/* arrow linked to about us section starts */
-.fa-chevron-down {
-    position: absolute;
-    width: 21px;
-    height: 10.5px;
-    left: 198px;
-    top: 711px;
-}
-
-#arrow-2 {
-    top: 720px;
-}
-
-#arrow-description {
-    position: absolute;
-    width: 226px;
-    height: 29px;
-    left: 95px;
-    top: 715px;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 131.19%;   /* identical to box height, or 29px */
-}
-
-#arrow-1, #arrow-2, #arrow-description {
-    text-decoration: none;
-    color: #000000;
-}
-/* arrow linked to about us section ends */
-
 /* about us section starts */
+#about-us {
+    width: 100vw;
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
 #about-us h3 {
-    position: absolute;
+    position: relative;
     width: 349px;
     height: 101px;
-    left: 30px;
-    top: 818px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 131.19%;    /* or 31px */
+    top: 20px;
 }
 
 .about-us-txt {
-    position: absolute;
+    position: relative;
     font-weight: 500;
     font-size: 20px;
     line-height: 131.19%;   /* or 26px */
     color: #5C5C5C;
+    text-align: justify;
 }
 
 #about-us-txt1 {
     width: 376px;
     height: 137px;
-    left: 30px;
-    top: 952px;
+    top: 10px;
 }
 
 #about-us-txt2 {
     width: 358px;
     height: 130px;
-    left: 28px;
-    top: 1125px;
+    top: 10px;
 }
 /* about us section ends */
 
 /* services section starts */
+#services {
+    width: 100vw;
+    position: relative;
+    top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
 #services-description {
     position: absolute;
     width: 285px;
     height: 52px;
-    left: 28px;
-    top: 1302px;
+    top: 13px;
     font-weight: 500;
     font-size: 20px;
     line-height: 131.19%;  /* or 26px */
@@ -381,10 +372,6 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     height: 93px;
     left: 30px;
     top: 1606px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 131.19%;   /* or 31px */
-    color: #000000;
 }
 
 #ending > p {
@@ -458,7 +445,7 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     }
 
     #lang {
-        margin-right: 40px;
+        margin-right: 50px;
     }
 
     nav {
@@ -466,7 +453,6 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     }
 
     /*main heading starts*/
-    /* home chnged so not showing correctly for desktop */
     #home > #welcome-frame {
         position: absolute;
         width: 409px;
@@ -486,8 +472,9 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     }
     
     #project-button {
-        left: 40px;
-        top: 630px;
+        position: absolute;
+        left: 40px;   /* -40px for ipad 768px*/   /* ipad pro pr -170px 1024px not abs */
+        top: 640px;     /* 540px when not abs */
         width: 217px;
         height: 49px;
     }
@@ -499,16 +486,102 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
         top: 9px;
     } 
     /* project button ends */
-}
 
-/* the language and menu become column instead of row after this point*/
-@media only screen and (max-width: 312px) {
-    body {
-        background-color: #000000;
+    /* about us section starts */
+    #about-us h3 {
+        position: absolute;
+        width: 349px;
+        height: 101px;
+        left: 40px;
+        top: 730px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 131.19%;    /* or 31px */
     }
+
+    .about-us-txt {
+        position: absolute;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 131.19%;   /* or 26px */
+        color: #5C5C5C;
+    }
+
+    #about-us-txt1 {
+        width: 376px;
+        height: 137px;
+        left: 40px;
+        top: 850px;
+    }
+
+    #about-us-txt2 {
+        width: 358px;
+        height: 130px;
+        left: 40px;
+        top: 1000px;
+    }
+    /* about us section ends */
+
+    /* services section starts */
+    #services-description {
+        position: absolute;
+        width: 285px;
+        height: 52px;
+        left: 28px;
+        top: 1302px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 131.19%;  /* or 26px */
+        color: #000000;
+    }
+    
+    #services > img {
+        position: absolute;
+        width: 655px;
+        height: 384.2px;
+        left: -50px;
+        top: 1136px;
+    }
+    
+    #circle {
+        background-color: #FF0000;
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        left: 304px;
+        top: 1373px;
+        border-radius: 50%;
+    }
+    
+    #location {
+        position: absolute;
+        width: 114px;
+        height: 29px;
+        left: 333px;
+        top: 1360px;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 131.19%;  /* identical to box height, or 29px */
+        color: #000000;
+    }
+    
+    #service-button {
+        width: 140px;
+        height: 49px;
+        left: 25px;
+        top: 1390px;
+    }
+    
+    #services > #service-button > p {
+        width: 158px;
+        height: 49px;
+        left: 25px;
+        top: 9px;
+    }
+    /* services section ends */
 }
 
-/* media query to chnge text size on mobile view */
+/* changing text size on mobile view */
 @media only screen and (max-width: 414px) and (min-width: 321px){
     #logo {
         width: 70px;
@@ -531,10 +604,38 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
         font-size: 22px;
         margin-top: 10.5px;
     }
+
+    .h2-headings {
+        font-size: 32px;
+    }
+    
+    .about-us-txt {
+        position: relative;
+        font-weight: 500;
+        font-size: 25px;   /* 22 px if loser says */
+        line-height: 131.19%;   /* or 26px */
+        color: #5C5C5C;
+    }
+
+    .h3-headings {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 131.19%;    /* or 31px */
+        color: #000000;
+     }
 }
+
+/* ISSUES */
 /* 320 is iphone 5se. 
 needs some other design or when 
 language is chnged to EN then we can do it.
 becomes two lines otherwise.*/
+
+/* the language and menu become column instead of row after this point*/
+@media only screen and (max-width: 312px) {
+    body {
+        background-color: #000000;
+    }
+}
 
 
