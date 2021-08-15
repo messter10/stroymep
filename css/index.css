@@ -59,7 +59,6 @@ body {
 nav {
     width: 100%;
     height: 60px;
-    padding-right: 10px;
 }
 
 /*company name and logo on left side of nav bar*/
@@ -209,11 +208,13 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
 /*main heading starts*/
 #home {
     width: 100vw;
+    position: relative;
     display: block;
     text-align: left;
     margin-right: auto;
     margin-left: auto;
     margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 #home > #welcome-frame {
@@ -227,11 +228,13 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
 /* see our projects related button and text starts */
 #project-button-area {
     width: 100vw;
+    position: relative;
     display: block;
     text-align: left;
     margin-right: auto;
     margin-left: auto;
-    margin-top: -10px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 #project-button-area > h2 {
@@ -245,7 +248,7 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
 #project-button {
     position: relative;
     left: -50px;
-    top: 40px;
+    top: 55px;
     width: 217px;
     height: 49px;
 }
@@ -262,19 +265,19 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
 #about-us {
     width: 100vw;
     position: relative;
-    top: 20px;
     display: flex;
     flex-direction: column;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 50px;
+    margin-top: 55px;
+    margin-bottom: 55px;
 }
 
 #about-us h3 {
     position: relative;
     width: 349px;
     height: 101px;
-    top: 20px;
+    padding-top: 20px;
 }
 
 .about-us-txt {
@@ -283,67 +286,73 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     font-size: 20px;
     line-height: 131.19%;   /* or 26px */
     color: #5C5C5C;
-    text-align: justify;
+    /*text-align: justify;*/
 }
 
 #about-us-txt1 {
-    width: 376px;
+    width: 98vw;
     height: 137px;
-    top: 10px;
 }
 
 #about-us-txt2 {
-    width: 358px;
+    width: 98vw;
     height: 130px;
-    top: 10px;
+    padding-top: 75px;
 }
 /* about us section ends */
 
 /* services section starts */
 #services {
-    width: 100vw;
-    position: relative;
-    top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 55px;
+    margin-bottom: 55px;   /**/
+    margin-right: 0;
+    margin-left: 0;
 }
 
 #services-description {
-    position: absolute;
     width: 285px;
     height: 52px;
-    top: 13px;
+    margin-top: 0px;
     font-weight: 500;
     font-size: 20px;
     line-height: 131.19%;  /* or 26px */
     color: #000000;
 }
 
-#services > img {
-    position: absolute;
-    width: 655px;
-    height: 384.2px;
-    left: -50px;
-    top: 1136px;
+#khan-shatyr {
+    margin-top: -160px;
+    max-width: inherit;
+    display: inline-block;
+    text-align: right;
+    overflow-x: hidden;
+}
+
+#khan-shatyr > svg {
+    max-width: inherit;
+    position: relative;
+
 }
 
 #circle {
-    background-color: #FF0000;
     position: absolute;
+    background-color: #FF0000;
     width: 15px;
     height: 15px;
-    left: 304px;
-    top: 1373px;
+    margin-left: 245px;
+    margin-top: 220px;   /* 200 l, -185 top*/
     border-radius: 50%;
+    z-index: 2;
 }
 
 #location {
     position: absolute;
     width: 114px;
     height: 29px;
-    left: 333px;
-    top: 1360px;
+    margin-left: 250px;
+    margin-top: 235px;
     font-weight: bold;
     font-size: 22px;
     line-height: 131.19%;  /* identical to box height, or 29px */
@@ -353,8 +362,8 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
 #service-button {
     width: 140px;
     height: 49px;
-    left: 25px;
-    top: 1390px;
+    left: 26px;
+    margin-top: 5px;
 }
 
 #services > #service-button > p {
@@ -370,7 +379,7 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     position: absolute;
     width: 250px;
     height: 93px;
-    left: 30px;
+    left: 0px;
     top: 1606px;
 }
 
@@ -378,7 +387,7 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     position: absolute;
     width: 369px;
     height: 104px;
-    left: 30px;
+    left: 0px;
     top: 1731px;
     font-weight: 500;
     font-size: 20px;
@@ -579,6 +588,73 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
         top: 9px;
     }
     /* services section ends */
+
+    /* ending section starts */
+    #ending > h3 {
+        position: absolute;
+        width: 250px;
+        height: 93px;
+        left: 30px;
+        top: 1606px;
+    }
+
+    #ending > p {
+        position: absolute;
+        width: 369px;
+        height: 104px;
+        left: 30px;
+        top: 1731px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 131.19%;    /* or 26px */
+        color: #5C5C5C;
+    }
+    /* ending section ends */
+
+    /* contact section starts */
+    #contact > h2 {
+        position: absolute;
+        width: 297px;
+        height: 68px;
+        left: 30px;
+        top: 1877px;
+    }
+
+    #contact-button {
+        width: 158px;
+        height: 49px;
+        left: 25px;
+        top: 1992px;
+    }
+
+    #contact > #contact-button > p {
+        width: 158px;
+        height: 49px;
+        left: 25px;
+        top: 9px;
+    }
+    /* contact section ends */
+
+    /* footer starts */
+    #logo-name {
+        position: absolute;
+        width: 37px;
+        height: 37px;
+        left: 26px;
+        top: 2105px;
+        padding-bottom: 15px;
+        color: #5C5C5C;
+    }
+
+    #copyright {
+        position: absolute;
+        width: 129px;
+        height: 18px;
+        left: 71px;
+        top: 2114px;
+        padding-bottom: 15px;
+    }
+    /* footer ends */
 }
 
 /* changing text size on mobile view */
@@ -609,12 +685,8 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
         font-size: 32px;
     }
     
-    .about-us-txt {
-        position: relative;
-        font-weight: 500;
-        font-size: 25px;   /* 22 px if loser says */
-        line-height: 131.19%;   /* or 26px */
-        color: #5C5C5C;
+    .about-us-txt, #services-description {
+        font-size: 25px;
     }
 
     .h3-headings {
