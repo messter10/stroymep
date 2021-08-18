@@ -310,6 +310,7 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     margin-bottom: 55px;   /**/
     margin-right: 0;
     margin-left: 0;
+    padding-top: 50px;
 }
 
 #services-description {
@@ -333,7 +334,7 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
 #khan-shatyr > svg {
     max-width: inherit;
     position: relative;
-
+    overflow-x: hidden;
 }
 
 #circle {
@@ -342,7 +343,7 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     width: 15px;
     height: 15px;
     margin-left: 245px;
-    margin-top: 220px;   /* 200 l, -185 top*/
+    margin-top: 10px;   /* 200 l, -185 top*/
     border-radius: 50%;
     z-index: 2;
 }
@@ -351,8 +352,8 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
     position: absolute;
     width: 114px;
     height: 29px;
-    margin-left: 250px;
-    margin-top: 235px;
+    margin-left: 210px;
+    margin-top: 0px;
     font-weight: bold;
     font-size: 22px;
     line-height: 131.19%;  /* identical to box height, or 29px */
@@ -375,20 +376,26 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
 /* services section ends */
 
 /* ending section starts */
+#ending {
+    width: 100vw;
+    position: relative;
+    display: block;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
 #ending > h3 {
-    position: absolute;
     width: 250px;
     height: 93px;
-    left: 0px;
-    top: 1606px;
 }
 
 #ending > p {
-    position: absolute;
     width: 369px;
     height: 104px;
-    left: 0px;
-    top: 1731px;
+    margin-top: 65px;
     font-weight: 500;
     font-size: 20px;
     line-height: 131.19%;    /* or 26px */
@@ -397,46 +404,62 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
 /* ending section ends */
 
 /* contact section starts */
+#contact {  
+    width: 100vw;
+    position: relative;
+    display: block;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 55px;
+    margin-bottom: 35px;}
+
 #contact > h2 {
-    position: absolute;
     width: 297px;
     height: 68px;
-    left: 30px;
-    top: 1877px;
 }
 
 #contact-button {
     width: 158px;
     height: 49px;
-    left: 25px;
-    top: 1992px;
+    left: 22px;
 }
 
 #contact > #contact-button > p {
     width: 158px;
     height: 49px;
-    left: 25px;
+    left: 21px;
     top: 9px;
 }
 /* contact section ends */
 
 /* footer starts */
+footer {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 155px;
+    margin-bottom: 5px;}
+}
+
 #logo-name {
-    position: absolute;
     width: 37px;
     height: 37px;
-    left: 26px;
-    top: 2105px;
+    margin-left: 26px;
+    margin-top: 25px;
     padding-bottom: 15px;
     color: #5C5C5C;
 }
 
 #copyright {
-    position: absolute;
     width: 129px;
     height: 18px;
-    left: 71px;
-    top: 2114px;
+    margin-left: 10px;
+    margin-top: 17px;
     padding-bottom: 15px;
 }
 /* footer ends */
@@ -685,7 +708,7 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
         font-size: 32px;
     }
     
-    .about-us-txt, #services-description {
+    .about-us-txt, #services-description, #ending > p {
         font-size: 25px;
     }
 
@@ -694,7 +717,12 @@ nav ul li /* dropdowns for menu and lang. the anchors for desktop-menu */{
         font-size: 28px;
         line-height: 131.19%;    /* or 31px */
         color: #000000;
-     }
+    }
+
+    #logo-name {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 /* ISSUES */
